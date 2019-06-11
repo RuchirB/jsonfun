@@ -1,65 +1,449 @@
 {
    "extent": {
       "start": "2016-03-07T00:00:00Z",
-      "end": "2019-06-08T23:59:59Z"
+      "end": "2019-06-10T23:59:59Z"
    },
    "latest_highlights": [
       {
-         "aid": "5cfadfeaa097df0f98a31dbc",
+         "aid": "5cfe6f68a097df0f98a32bb5",
          "people_top5": [
             "Michael Gove",
-            "Rory Stewart",
+            "Boris Johnson",
+            "Dominic Raab",
             "Theresa May",
-            "Mrs May",
-            "Nick Eardley"
+            "Jeremy Corbyn"
          ],
-         "title": "UK PM candidate Gove admits taking cocaine",
-         "url": "http://feeds.reuters.com/~r/Reuters/worldNews/~3/juxAmHjDDSM/uk-pm-candidate-gove-admits-taking-cocaine-idUSKCN1T82IB",
+         "title": "Tory leadership: Michael Gove's pitch to lead party",
+         "url": "https://www.bbc.co.uk/news/uk-politics-48586177",
          "ntopic": 1574751,
-         "nl_title": "Leading Brexit contender Gove says he has ' regrets' taking cocaine",
-         "summary": "The environment secretary says taking drugs 20 years ago should not affect his bid to become PM.",
-         "summary_aid": "5cfb0b37a097df0f98a31e66",
+         "nl_title": "Britain has been ' humiliated ' in Brexit talks , says Dominic Raab",
+         "summary": "Michael Gove says the UK would be outside a range of EU-wide arrangements, but admits Brexit \"would not be easy\".",
+         "summary_aid": "5cfe6f68a097df0f98a32bb5",
          "sources": [
             {
-               "aid": "5cfadfeaa097df0f98a31dbc",
+               "aid": "5cfe6f68a097df0f98a32bb5",
+               "source": "bbc.co.uk"
+            },
+            {
+               "aid": "5cfc6c56a097df0f98a322af",
+               "source": "bbc.co.uk"
+            },
+            {
+               "aid": "5cfe340ea097df0f98a329ad",
+               "source": "bbc.co.uk"
+            }
+         ],
+         "source": "bbc.co.uk",
+         "summary_source": "bbc.co.uk",
+         "pubtime": "2019-06-10T14:45:39Z",
+         "aids": [
+            "5cfc6c56a097df0f98a322af",
+            "5cfe340ea097df0f98a329ad",
+            "5cfe6f68a097df0f98a32bb5"
+         ],
+         "_id": "5cfe8b33a097df4bc1d874c6",
+         "summary_title": "Tory leadership: Michael Gove's pitch to lead party",
+         "size": 3
+      },
+      {
+         "to_update": "5cfe5f72a097df4bc1d8741d",
+         "found": true,
+         "aid": "5cfe53a9a097df0f98a32abe",
+         "people_top5": [
+            "Jeremy Hunt",
+            "Dominic Raab",
+            "Boris Johnson",
+            "Matt Hancock",
+            "Jeremy Corbyn"
+         ],
+         "title": "Jeremy Hunt wins backing of Penny Mordaunt for Tory leadership bid",
+         "url": "https://www.theguardian.com/politics/2019/jun/10/jeremy-hunt-wins-support-penny-mordaunt-conservative-leadership",
+         "ntopic": 1574751,
+         "nl_title": "Jeremy Corbyn is right : We need a price to pay for our armed forces",
+         "summary": "Support of Brexiter defence secretary comes after Amber Rudd gave him her backing",
+         "summary_aid": "5cfe53a9a097df0f98a32abe",
+         "sources": [
+            {
+               "aid": "5cfe53a9a097df0f98a32abe",
+               "source": "theguardian.com"
+            },
+            {
+               "aid": "5cfe39e2a097df0f98a329df",
+               "source": "theguardian.com"
+            }
+         ],
+         "source": "theguardian.com",
+         "summary_source": "theguardian.com",
+         "pubtime": "2019-06-10T12:43:38Z",
+         "aids": [
+            "5cfe53a9a097df0f98a32abe",
+            "5cfe39e2a097df0f98a329df"
+         ],
+         "_id": "5cfe5f72a097df4bc1d8741d",
+         "summary_title": "Jeremy Hunt wins backing of Penny Mordaunt for Tory leadership bid",
+         "size": 2
+      },
+      {
+         "to_update": "5cfe33b7a097df4bc1d87353",
+         "found": true,
+         "aid": "5cfdbcaca097df0f98a32775",
+         "people_top5": [
+            "Boris Johnson",
+            "Jeremy Hunt",
+            "Theresa May",
+            "Michael Gove",
+            "Sajid Javid"
+         ],
+         "title": "Tory leadership contest: Boris Johnson pledges to cut income tax",
+         "url": "https://www.bbc.co.uk/news/uk-politics-48577579",
+         "ntopic": 1574751,
+         "nl_title": "Boris Johnson pledges to cut income tax for three million higher earners",
+         "summary": "The Tory leadership hopeful says he would use money set aside for a no-deal Brexit to cut taxes for people earning more than PS50,000.",
+         "summary_aid": "5cfdbcaca097df0f98a32775",
+         "sources": [
+            {
+               "aid": "5cfdbcaca097df0f98a32775",
+               "source": "bbc.co.uk"
+            },
+            {
+               "aid": "5cfe0d7ca097df0f98a32890",
+               "source": "independent.co.uk"
+            },
+            {
+               "aid": "5cfe2866a097df0f98a32945",
                "source": "reuters.com"
+            }
+         ],
+         "source": "bbc.co.uk",
+         "summary_source": "bbc.co.uk",
+         "pubtime": "2019-06-10T11:23:46Z",
+         "aids": [
+            "5cfe2866a097df0f98a32945",
+            "5cfe0d7ca097df0f98a32890",
+            "5cfdbcaca097df0f98a32775"
+         ],
+         "_id": "5cfe33b7a097df4bc1d87353",
+         "summary_title": "Tory leadership contest: Boris Johnson pledges to cut income tax",
+         "size": 3
+      },
+      {
+         "to_update": "5cfe07f8a097df4bc1d872be",
+         "found": true,
+         "aid": "5cfd67a0a097df0f98a3264f",
+         "people_top5": [
+            "Michael Gove",
+            "Jeremy Hunt",
+            "Boris Johnson",
+            "Dominic Raab",
+            "Baroness Sayeeda Warsi"
+         ],
+         "title": "Michael Gove's No 10 hopes falter after cocaine admission",
+         "url": "https://www.theguardian.com/politics/2019/jun/09/michael-goves-conservative-leadership-prime-minister-cocaine-admission",
+         "ntopic": 1574751,
+         "nl_title": "Jeremy Hunt , Matt Hancock and Dominic Raab launch campaigns as Michael Gove fights to",
+         "summary": "Former Conservative chair Sayeeda Warsi has called on Michael Gove to quit the race",
+         "summary_aid": "5cfdef86a097df0f98a32801",
+         "sources": [
+            {
+               "aid": "5cfd67a0a097df0f98a3264f",
+               "source": "theguardian.com"
+            },
+            {
+               "aid": "5cfd4c5da097df0f98a325fb",
+               "source": "independent.co.uk"
+            },
+            {
+               "aid": "5cfdef86a097df0f98a32801",
+               "source": "independent.co.uk"
+            }
+         ],
+         "source": "theguardian.com",
+         "summary_source": "independent.co.uk",
+         "pubtime": "2019-06-09T23:01:18Z",
+         "aids": [
+            "5cfdef86a097df0f98a32801",
+            "5cfd4c5da097df0f98a325fb",
+            "5cfd67a0a097df0f98a3264f"
+         ],
+         "_id": "5cfe07f8a097df4bc1d872be",
+         "summary_title": "Tory leadership race: Rival candidates launch campaigns as Gove suffers from cocaine admission fallout",
+         "size": 3
+      },
+      {
+         "to_update": "5cfe33b7a097df4bc1d87352",
+         "aid": "5cfd8611a097df0f98a326ad",
+         "people_top5": [
+            "Jeremy Hunt",
+            "Amber Rudd",
+            "Jeremy Corbyn",
+            "Theresa May",
+            "Boris Johnson"
+         ],
+         "title": "Amber Rudd backs Jeremy Hunt in Tory leadership contest",
+         "url": "https://www.independent.co.uk/news/uk/politics/amber-rudd-jeremy-hunt-tory-leadership-race-brexit-a8951531.html",
+         "ntopic": 1574751,
+         "nl_title": "Esther Mcvey would be ready to ask the Queen to suspend parliament to stop Mps blocking Brexit",
+         "summary": "Jeremy Hunt says his \"personal view\" is the legal time limit for an abortion should fall from 24 weeks to 12.",
+         "summary_aid": "5cfe2b8ca097df0f98a32955",
+         "sources": [
+            {
+               "aid": "5cfd8611a097df0f98a326ad",
+               "source": "independent.co.uk"
+            },
+            {
+               "aid": "5cfd14fba097df0f98a32517",
+               "source": "theguardian.com"
+            },
+            {
+               "aid": "5cfe5e88a097df0f98a32b20",
+               "source": "bbc.co.uk"
+            },
+            {
+               "aid": "5cfe2b8ca097df0f98a32955",
+               "source": "bbc.co.uk"
+            },
+            {
+               "aid": "5cfe7acca097df0f98a32c25",
+               "source": "independent.co.uk"
+            },
+            {
+               "aid": "5cfcd48ba097df0f98a323c1",
+               "source": "independent.co.uk"
+            },
+            {
+               "aid": "5cfe57a9a097df0f98a32adf",
+               "source": "independent.co.uk"
+            }
+         ],
+         "source": "independent.co.uk",
+         "summary_source": "bbc.co.uk",
+         "pubtime": "2019-06-09T21:16:06Z",
+         "aids": [
+            "5cfe7acca097df0f98a32c25",
+            "5cfe57a9a097df0f98a32adf",
+            "5cfd8611a097df0f98a326ad",
+            "5cfd14fba097df0f98a32517",
+            "5cfe5e88a097df0f98a32b20",
+            "5cfcd48ba097df0f98a323c1",
+            "5cfe2b8ca097df0f98a32955"
+         ],
+         "_id": "5cfe33b7a097df4bc1d87352",
+         "summary_title": "Tory leadership: Amber Rudd backs Jeremy Hunt despite abortion views",
+         "size": 7
+      },
+      {
+         "to_update": "5cfe33b7a097df4bc1d87355",
+         "found": true,
+         "aid": "5cfcf3a8a097df0fb4df6be2",
+         "people_top5": [
+            "Boris Johnson",
+            "Michael Gove",
+            "Jeremy Hunt",
+            "Nigel Farage",
+            "Jeremy Corbyn"
+         ],
+         "title": "UK prime minister race to replace Theresa May makes US look good",
+         "url": "https://www.cnn.com/2019/06/09/politics/uk-prime-minister-race-us-president",
+         "ntopic": 1574751,
+         "nl_title": "Brexit : UK elects President Donald Trump",
+         "summary": "Around a dozen British Conservative MPs formally throw their hats into the ring on Monday in the fight to replace Theresa May as party leader and prime minister, with her former foreign secretary Boris Johnson seen as the runaway favourite.",
+         "summary_aid": "5cfe1c35a097df0f98a328f7",
+         "sources": [
+            {
+               "aid": "5cfcf3a8a097df0fb4df6be2",
+               "source": "cnn.com"
+            },
+            {
+               "aid": "5cfe1c35a097df0f98a328f7",
+               "source": "france24.com"
+            },
+            {
+               "aid": "5cfe44a7a097df1177d8352d",
+               "source": "afp.com"
+            }
+         ],
+         "source": "cnn.com",
+         "summary_source": "france24.com",
+         "pubtime": "2019-06-09T11:55:06Z",
+         "aids": [
+            "5cfcf3a8a097df0fb4df6be2",
+            "5cfe44a7a097df1177d8352d",
+            "5cfe1c35a097df0f98a328f7"
+         ],
+         "_id": "5cfe33b7a097df4bc1d87355",
+         "summary_title": "UK Conservatives launch race to replace Prime Minister May",
+         "size": 3
+      },
+      {
+         "aid": "5cfce414a097df0f98a32427",
+         "people_top5": [
+            "Michael Gove",
+            "Dominic Raab",
+            "David Cameron",
+            "Boris Johnson",
+            "Theresa May"
+         ],
+         "title": "Michael Gove: Taking cocaine 'was a crime and a mistake'",
+         "url": "https://www.bbc.co.uk/news/uk-politics-48572320",
+         "ntopic": 1574751,
+         "nl_title": "Michael Gove : I made a ' profound mistake ' by taking cocaine",
+         "summary": "Conservative leadership candidate Michael Gove is grilled about taking cocaine more than 20 years ago.",
+         "summary_aid": "5cfce414a097df0f98a32427",
+         "sources": [
+            {
+               "aid": "5cfce414a097df0f98a32427",
+               "source": "bbc.co.uk"
+            },
+            {
+               "aid": "5cfcf3a7a097df0fb4df6b19",
+               "source": "cnn.com"
+            },
+            {
+               "aid": "5cfcf3a5a097df0fb4df6549",
+               "source": "telegraph.co.uk"
+            },
+            {
+               "aid": "5cfce843a097df0f98a3243b",
+               "source": "bbc.co.uk"
+            },
+            {
+               "aid": "5cfb0b37a097df0f98a31e66",
+               "source": "bbc.co.uk"
+            },
+            {
+               "aid": "5cfcf3a6a097df0fb4df6a34",
+               "source": "bloomberg.com"
             },
             {
                "aid": "5cfad259a097df0f98a31d73",
                "source": "independent.co.uk"
             },
             {
-               "aid": "5cfb0b37a097df0f98a31e66",
-               "source": "bbc.co.uk"
+               "aid": "5cfb7671a097df0f98a31f6e",
+               "source": "theguardian.com"
+            },
+            {
+               "aid": "5cfadfeaa097df0f98a31dbc",
+               "source": "reuters.com"
+            },
+            {
+               "aid": "5cfd327ba097df0f98a3257d",
+               "source": "theguardian.com"
+            },
+            {
+               "aid": "5cfe10bca097df0fb4df6d6c",
+               "source": "bloomberg.com"
+            }
+         ],
+         "source": "bbc.co.uk",
+         "summary_source": "bbc.co.uk",
+         "pubtime": "2019-06-09T10:28:42Z",
+         "aids": [
+            "5cfcf3a7a097df0fb4df6b19",
+            "5cfce843a097df0f98a3243b",
+            "5cfe10bca097df0fb4df6d6c",
+            "5cfd327ba097df0f98a3257d",
+            "5cfb0b37a097df0f98a31e66",
+            "5cfcf3a5a097df0fb4df6549",
+            "5cfcf3a6a097df0fb4df6a34",
+            "5cfadfeaa097df0f98a31dbc",
+            "5cfb7671a097df0f98a31f6e",
+            "5cfad259a097df0f98a31d73",
+            "5cfce414a097df0f98a32427"
+         ],
+         "_id": "5cfe8b33a097df4bc1d874c5",
+         "summary_title": "Michael Gove: Taking cocaine 'was a crime and a mistake'",
+         "size": 11
+      },
+      {
+         "to_update": "5cfe33b7a097df4bc1d87354",
+         "found": true,
+         "aid": "5cfcf3a6a097df0fb4df69c3",
+         "people_top5": [
+            "Michael Gove",
+            "Boris Johnson",
+            "Matthew Goodwin",
+            "Cressida Dick",
+            "Barack Obama"
+         ],
+         "title": "Michael Gove, a Contender to Succeed Theresa May, Admits to Past Drug Use",
+         "url": "https://www.nytimes.com/2019/06/08/world/europe/michael-gove-cocaine-uk.html",
+         "ntopic": 1574751,
+         "nl_title": "The Guardian view on Michael Gove : ' We are all sinners'",
+         "summary": "Mr. Gove said that he had taken illegal drugs \"on several occasions at social events more than 20 years ago.\" He said it should not disqualify him in the leadership race.",
+         "summary_aid": "5cfcf3a6a097df0fb4df69c3",
+         "sources": [
+            {
+               "aid": "5cfcf3a6a097df0fb4df69c3",
+               "source": "nytimes.com"
+            },
+            {
+               "aid": "5cfe2a5da097df0f98a32953",
+               "source": "theguardian.com"
+            }
+         ],
+         "source": "nytimes.com",
+         "summary_source": "nytimes.com",
+         "pubtime": "2019-06-08T11:55:06Z",
+         "aids": [
+            "5cfcf3a6a097df0fb4df69c3",
+            "5cfe2a5da097df0f98a32953"
+         ],
+         "_id": "5cfe33b7a097df4bc1d87354",
+         "summary_title": "Michael Gove, a Contender to Succeed Theresa May, Admits to Past Drug Use",
+         "size": 2
+      },
+      {
+         "to_update": "5cfbca4ea097df4bc1d865a2",
+         "found": true,
+         "aid": "5cfb89f2a097df0f98a31fad",
+         "people_top5": [
+            "Dominic Raab",
+            "Tory Brexit",
+            "Theresa May",
+            "John Bercow",
+            "Nigel Farage"
+         ],
+         "title": "UK PM candidate Raab says suspending parliament remains a Brexit option",
+         "url": "http://feeds.reuters.com/~r/Reuters/worldNews/~3/IXnWM2cGBew/uk-pm-candidate-raab-says-suspending-parliament-remains-a-brexit-option-idUSKCN1T90B5",
+         "ntopic": 1574751,
+         "nl_title": "ex-brexit secretary Raab says parliament still option to leave EU",
+         "summary": "Tory leadership contender says dropping widely criticised idea would weaken UK negotiating position",
+         "summary_aid": "5cfb9fe1a097df0f98a32013",
+         "sources": [
+            {
+               "aid": "5cfb89f2a097df0f98a31fad",
+               "source": "reuters.com"
+            },
+            {
+               "aid": "5cfb9fe1a097df0f98a32013",
+               "source": "theguardian.com"
             }
          ],
          "source": "reuters.com",
-         "summary_source": "bbc.co.uk",
-         "pubtime": "2019-06-07T22:13:23Z",
+         "summary_source": "theguardian.com",
+         "pubtime": "2019-06-08T10:10:19Z",
          "aids": [
-            "5cfadfeaa097df0f98a31dbc",
-            "5cfad259a097df0f98a31d73",
-            "5cfb0b37a097df0f98a31e66"
+            "5cfb89f2a097df0f98a31fad",
+            "5cfb9fe1a097df0f98a32013"
          ],
-         "_id": "5cfb1bbfa097df4bc1d8601b",
-         "summary_title": "Michael Gove: Cocaine 'mistake' a 'deep regret'",
-         "size": 3
+         "_id": "5cfbca4ea097df4bc1d865a2",
+         "summary_title": "suspending parliament should not be ruled out, says Dominic Raab",
+         "size": 2
       },
       {
-         "to_update": "5cfa6c52a097df4bc1d85871",
-         "found": true,
          "aid": "5cfaa955a097df0f98a31c8d",
          "people_top5": [
             "Nigel Farage",
-            "Jeremy Corbyn",
             "Lisa Forbes",
+            "Mike Greene",
             "Fiona Onasanya",
             "Theresa May"
          ],
          "title": "Peterborough by-election: Labour beats Brexit Party",
          "url": "https://www.bbc.co.uk/news/uk-politics-48557950",
          "ntopic": 1574751,
-         "nl_title": "Brexit , Ukip and the Labour trajectory : how the Tories are shaping up to be britain's Brexi",
+         "nl_title": "UK opposition Labour Party wins Peterborough by-election",
          "summary": "The Labour Party candidate, Lisa Forbes, narrowly wins the Peterborough by-election by 683 votes.",
          "summary_aid": "5cf9cbd0a097df0f98a3176b",
          "sources": [
@@ -76,40 +460,40 @@
                "source": "independent.co.uk"
             },
             {
+               "aid": "5cf9e9cba097df0f98a317b3",
+               "source": "reuters.com"
+            },
+            {
+               "aid": "5cfa1400a097df1177d8341d",
+               "source": "afp.com"
+            },
+            {
+               "aid": "5cfcf3a3a097df0fb4df60cd",
+               "source": "france24.com"
+            },
+            {
+               "aid": "5cfb2357a097df0fb4df5736",
+               "source": "bloomberg.com"
+            },
+            {
                "aid": "5cf8c4d9a097df0f98a31052",
                "source": "bbc.co.uk"
-            },
-            {
-               "aid": "5cf9074aa097df0f98a3123f",
-               "source": "theguardian.com"
-            },
-            {
-               "aid": "5cf3b66da097df0f98a2f3a1",
-               "source": "theguardian.com"
-            },
-            {
-               "aid": "5cf3d760a097df0f98a2f439",
-               "source": "independent.co.uk"
-            },
-            {
-               "aid": "5cfa0576a097df0f98a3181a",
-               "source": "theguardian.com"
-            },
-            {
-               "aid": "5cf83744a097df0f98a30e0d",
-               "source": "aljazeera.com"
             },
             {
                "aid": "5cf983c8a097df0f98a315fb",
                "source": "bbc.co.uk"
             },
             {
-               "aid": "5cf6b247a097df0f98a3044e",
+               "aid": "5cfa0576a097df0f98a3181a",
                "source": "theguardian.com"
             },
             {
-               "aid": "5cf8031ea097df0f98a30c97",
-               "source": "theguardian.com"
+               "aid": "5cf9c672a097df0f98a3175f",
+               "source": "reuters.com"
+            },
+            {
+               "aid": "5cfb2356a097df0fb4df55e2",
+               "source": "cnn.com"
             },
             {
                "aid": "5cf98804a097df0f98a31611",
@@ -121,519 +505,30 @@
          "pubtime": "2019-06-07T18:03:55Z",
          "aids": [
             "5cf9cbd0a097df0f98a3176b",
+            "5cf9c672a097df0f98a3175f",
             "5cf98804a097df0f98a31611",
-            "5cf6b247a097df0f98a3044e",
-            "5cf8c4d9a097df0f98a31052",
-            "5cf3d760a097df0f98a2f439",
-            "5cf9074aa097df0f98a3123f",
+            "5cfb2356a097df0fb4df55e2",
+            "5cfcf3a3a097df0fb4df60cd",
             "5cf983c8a097df0f98a315fb",
             "5cfa0576a097df0f98a3181a",
-            "5cf83744a097df0f98a30e0d",
+            "5cfa1400a097df1177d8341d",
             "5cfa04c7a097df0f98a31815",
-            "5cf3b66da097df0f98a2f3a1",
             "5cfaa955a097df0f98a31c8d",
-            "5cf8031ea097df0f98a30c97"
+            "5cfb2357a097df0fb4df5736",
+            "5cf9e9cba097df0f98a317b3",
+            "5cf8c4d9a097df0f98a31052"
          ],
-         "_id": "5cfa6c52a097df4bc1d85871",
+         "_id": "5cfe8b33a097df4bc1d874c4",
          "summary_title": "Peterborough by-election: Labour candidate narrowly wins",
          "size": 13
-      },
-      {
-         "to_update": "5cfa6c52a097df4bc1d85872",
-         "found": true,
-         "aid": "5cfa4a36a097df0f98a3198e",
-         "people_top5": [
-            "Theresa May",
-            "Tory Brexit",
-            "David Cameron",
-            "Dominic Raab",
-            "Boris Johnson"
-         ],
-         "title": "End of May, Britain's PM steps down as Conservative leader",
-         "url": "http://feeds.reuters.com/~r/Reuters/worldNews/~3/YW9qf8j5bmI/end-of-may-britains-pm-steps-down-as-conservative-leader-idUSKCN1T812A",
-         "ntopic": 1574751,
-         "nl_title": "britain's May formally steps down as Conservatives leader",
-         "summary": "But Theresa May will remain UK prime minister until a new party leader is elected.",
-         "summary_aid": "5cf9b255a097df0f98a31717",
-         "sources": [
-            {
-               "aid": "5cfa4a36a097df0f98a3198e",
-               "source": "reuters.com"
-            },
-            {
-               "aid": "5cf9b255a097df0f98a31717",
-               "source": "bbc.co.uk"
-            },
-            {
-               "aid": "5cfaa2c8a097df0f98a31c69",
-               "source": "aa.com.tr"
-            }
-         ],
-         "source": "reuters.com",
-         "summary_source": "bbc.co.uk",
-         "pubtime": "2019-06-07T15:09:40Z",
-         "aids": [
-            "5cfa4a36a097df0f98a3198e",
-            "5cf9b255a097df0f98a31717",
-            "5cfaa2c8a097df0f98a31c69"
-         ],
-         "_id": "5cfa6c52a097df4bc1d85872",
-         "summary_title": "Theresa May officially steps down as Tory leader",
-         "size": 3
-      },
-      {
-         "to_update": "5cfa6c52a097df4bc1d85870",
-         "found": true,
-         "aid": "5cf9074aa097df0f98a3123f",
-         "people_top5": [
-            "Nigel Farage",
-            "Jeremy Corbyn",
-            "Lisa Forbes",
-            "Kristin Forbes",
-            "Fiona Onasanya"
-         ],
-         "title": "Labour is on the brink in Peterborough. This byelection is a battle over its future",
-         "url": "https://www.theguardian.com/commentisfree/2019/jun/06/labour-peterborough-byelection-brexit-party-remain",
-         "ntopic": 1574751,
-         "nl_title": "The Guardian view on Labour and Remain : Brexit and Jeremy Corbyn",
-         "summary": "The Labour Party candidate, Lisa Forbes, narrowly wins the Peterborough by-election by 683 votes.",
-         "summary_aid": "5cf9cbd0a097df0f98a3176b",
-         "sources": [
-            {
-               "aid": "5cf9074aa097df0f98a3123f",
-               "source": "theguardian.com"
-            },
-            {
-               "aid": "5cfa04c7a097df0f98a31815",
-               "source": "independent.co.uk"
-            },
-            {
-               "aid": "5cf3b66da097df0f98a2f3a1",
-               "source": "theguardian.com"
-            },
-            {
-               "aid": "5cf9cbd0a097df0f98a3176b",
-               "source": "bbc.co.uk"
-            },
-            {
-               "aid": "5cf3d760a097df0f98a2f439",
-               "source": "independent.co.uk"
-            },
-            {
-               "aid": "5cf6b247a097df0f98a3044e",
-               "source": "theguardian.com"
-            },
-            {
-               "aid": "5cfa0576a097df0f98a3181a",
-               "source": "theguardian.com"
-            }
-         ],
-         "source": "theguardian.com",
-         "summary_source": "bbc.co.uk",
-         "pubtime": "2019-06-06T12:04:20Z",
-         "aids": [
-            "5cf9cbd0a097df0f98a3176b",
-            "5cfa0576a097df0f98a3181a",
-            "5cf3d760a097df0f98a2f439",
-            "5cf9074aa097df0f98a3123f",
-            "5cf6b247a097df0f98a3044e",
-            "5cfa04c7a097df0f98a31815",
-            "5cf3b66da097df0f98a2f3a1"
-         ],
-         "_id": "5cfa6c52a097df4bc1d85870",
-         "summary_title": "Peterborough by-election: Labour candidate narrowly wins",
-         "size": 7
-      },
-      {
-         "to_update": "5cf9646aa097df4bc1d854db",
-         "found": true,
-         "aid": "5cf809b0a097df0f98a30ce5",
-         "people_top5": [
-            "Michael Gove",
-            "Boris Johnson",
-            "Theresa May",
-            "Tory Brexit",
-            "Jeremy Corbyn"
-         ],
-         "title": "Tory leadership: Brexit deadline 'not fixed date' says Gove",
-         "url": "https://www.bbc.co.uk/news/uk-politics-48535879",
-         "ntopic": 1574751,
-         "nl_title": "Michael Gove says Brexit deadline not ' fixed date '",
-         "summary": "The Tory leadership hopeful says he is \"not wedded\" to 31 October, but any further delay would be short.",
-         "summary_aid": "5cf809b0a097df0f98a30ce5",
-         "sources": [
-            {
-               "aid": "5cf809b0a097df0f98a30ce5",
-               "source": "bbc.co.uk"
-            },
-            {
-               "aid": "5cf8fb66a097df0f98a311d3",
-               "source": "theguardian.com"
-            }
-         ],
-         "source": "bbc.co.uk",
-         "summary_source": "bbc.co.uk",
-         "pubtime": "2019-06-05T22:15:50Z",
-         "aids": [
-            "5cf809b0a097df0f98a30ce5",
-            "5cf8fb66a097df0f98a311d3"
-         ],
-         "_id": "5cf9646aa097df4bc1d854db",
-         "summary_title": "Tory leadership: Brexit deadline 'not fixed date' says Gove",
-         "size": 2
-      },
-      {
-         "to_update": "5cf938a7a097df4bc1d8536f",
-         "found": true,
-         "aid": "5cf6f96da097df0f98a30629",
-         "people_top5": [
-            "Boris Johnson",
-            "Andrea Leadsom",
-            "Rory Stewart",
-            "James Duddridge",
-            "Nicky Morgan"
-         ],
-         "title": "Notes from the first Tory leadership hustings",
-         "url": "https://www.bbc.co.uk/news/uk-politics-48522075",
-         "ntopic": 1574751,
-         "nl_title": "BBC to host Tory leadership TV debate",
-         "summary": "Four contenders to become the next PM appealed to Tory MPs behind closed doors.",
-         "summary_aid": "5cf6f96da097df0f98a30629",
-         "sources": [
-            {
-               "aid": "5cf6f96da097df0f98a30629",
-               "source": "bbc.co.uk"
-            },
-            {
-               "aid": "5cf92ee7a097df0f98a31383",
-               "source": "bbc.co.uk"
-            }
-         ],
-         "source": "bbc.co.uk",
-         "summary_source": "bbc.co.uk",
-         "pubtime": "2019-06-04T22:52:40Z",
-         "aids": [
-            "5cf92ee7a097df0f98a31383",
-            "5cf6f96da097df0f98a30629"
-         ],
-         "_id": "5cf938a7a097df4bc1d8536f",
-         "summary_title": "Notes from the first Tory leadership hustings",
-         "size": 2
-      },
-      {
-         "to_update": "5cf938a7a097df4bc1d8536c",
-         "found": true,
-         "aid": "5cf6eae9a097df0f98a305e0",
-         "people_top5": [
-            "Donald Trump",
-            "Meghan Markle",
-            "Prince Harry",
-            "Prince Charles",
-            "Theresa May"
-         ],
-         "title": "Trump says British royal Meghan was 'nasty' to him in new interview",
-         "url": "http://feeds.reuters.com/~r/Reuters/worldNews/~3/324Tkz8QlV8/trump-says-british-royal-meghan-was-nasty-to-him-in-new-interview-idUSKCN1T52YI",
-         "ntopic": 1574751,
-         "nl_title": "Donald Trump brands Duchess of Sussex ' nasty ' over critical comments",
-         "summary": "US President Donald Trump told ITV's \"Good Morning Britain\" in an interview aired Wednesday that he spoke with Prince Harry during his visit to Buckingham Palace on Monday, but not about his comments on Meghan, Duchess of Sussex.",
-         "summary_aid": "5cf7e477a097df0fb4df4908",
-         "sources": [
-            {
-               "aid": "5cf6eae9a097df0f98a305e0",
-               "source": "reuters.com"
-            },
-            {
-               "aid": "5cf2fdb5a097df0fb4df3b68",
-               "source": "cnn.com"
-            },
-            {
-               "aid": "5cf3c689a097df0f98a2f3ee",
-               "source": "independent.co.uk"
-            },
-            {
-               "aid": "5cf4270ba097df1177d83203",
-               "source": "afp.com"
-            },
-            {
-               "aid": "5cf43619a097df0f98a2f5af",
-               "source": "chicagotribune.com"
-            },
-            {
-               "aid": "5cf3dc73a097df0f98a2f455",
-               "source": "theguardian.com"
-            },
-            {
-               "aid": "5cf3e800a097df0f98a2f47b",
-               "source": "bbc.co.uk"
-            },
-            {
-               "aid": "5cf77aeda097df0f98a30842",
-               "source": "reuters.com"
-            },
-            {
-               "aid": "5cf257bda097df0f98a2ee9b",
-               "source": "independent.co.uk"
-            },
-            {
-               "aid": "5cf7e477a097df0fb4df4908",
-               "source": "cnn.com"
-            }
-         ],
-         "source": "reuters.com",
-         "summary_source": "cnn.com",
-         "pubtime": "2019-06-04T21:57:03Z",
-         "aids": [
-            "5cf7e477a097df0fb4df4908",
-            "5cf6eae9a097df0f98a305e0",
-            "5cf3dc73a097df0f98a2f455",
-            "5cf3c689a097df0f98a2f3ee",
-            "5cf43619a097df0f98a2f5af",
-            "5cf4270ba097df1177d83203",
-            "5cf2fdb5a097df0fb4df3b68",
-            "5cf77aeda097df0f98a30842",
-            "5cf3e800a097df0f98a2f47b",
-            "5cf257bda097df0f98a2ee9b"
-         ],
-         "_id": "5cf938a7a097df4bc1d8536c",
-         "summary_title": "GMB interview: Trump says he didn't talk to Prince Harry about \"nasty\" Meghan comment",
-         "size": 10
-      },
-      {
-         "to_update": "5cf9646aa097df4bc1d854d9",
-         "found": true,
-         "aid": "5cf6e749a097df0f98a305cd",
-         "people_top5": [
-            "Boris Johnson",
-            "Jeremy Corbyn",
-            "Nigel Farage",
-            "Sajid Javid",
-            "Andrea Leadsom"
-         ],
-         "title": "Boris Johnson: Tories must deliver Brexit or face extinction",
-         "url": "https://www.theguardian.com/politics/2019/jun/04/boris-johnson-tories-must-deliver-brexit-or-face-extinction",
-         "ntopic": 1574751,
-         "nl_title": "Boris Johnson warns of ' extinction ' if Tories fail to get Brexit",
-         "summary": "Speaking at a private hustings, Johnson told party members he is the man to put Farage 'back in his box'",
-         "summary_aid": "5cf6e749a097df0f98a305cd",
-         "sources": [
-            {
-               "aid": "5cf6e749a097df0f98a305cd",
-               "source": "theguardian.com"
-            },
-            {
-               "aid": "5cf6dc10a097df0f98a30575",
-               "source": "independent.co.uk"
-            },
-            {
-               "aid": "5cf70ebda097df0f98a3069f",
-               "source": "bbc.co.uk"
-            }
-         ],
-         "source": "theguardian.com",
-         "summary_source": "theguardian.com",
-         "pubtime": "2019-06-04T21:12:07Z",
-         "aids": [
-            "5cf6e749a097df0f98a305cd",
-            "5cf70ebda097df0f98a3069f",
-            "5cf6dc10a097df0f98a30575"
-         ],
-         "_id": "5cf9646aa097df4bc1d854d9",
-         "summary_title": "Boris Johnson: Tories must deliver Brexit or face extinction",
-         "size": 3
-      },
-      {
-         "to_update": "5cf9646aa097df4bc1d854d4",
-         "found": true,
-         "aid": "5cf51d22a097df0f98a2fa25",
-         "people_top5": [
-            "Donald Trump",
-            "Melania Trump",
-            "Prince Charles",
-            "Sadiq Khan",
-            "Nigel Farage"
-         ],
-         "title": "Donald Trump arrives in Buckingham Palace for state visit",
-         "url": "https://www.theguardian.com/us-news/2019/jun/03/donald-trump-arrives-in-buckingham-palace-for-state-visit",
-         "ntopic": 1574751,
-         "nl_title": "Trump visits Britain , but Brexit , Queen Elizabeth overshadowed",
-         "summary": "President Donald Trump is poised to have lunch with Queen Elizabeth II.",
-         "summary_aid": "5cf50a9aa097df0f98a2f97d",
-         "sources": [
-            {
-               "aid": "5cf51d22a097df0f98a2fa25",
-               "source": "theguardian.com"
-            },
-            {
-               "aid": "5cf4ca45a097df0f98a2f7ce",
-               "source": "independent.co.uk"
-            },
-            {
-               "aid": "5cf51ae6a097df0f98a2fa11",
-               "source": "theguardian.com"
-            },
-            {
-               "aid": "5cf5067ca097df0f98a2f95f",
-               "source": "reuters.com"
-            },
-            {
-               "aid": "5cf5275fa097df0f98a2fa71",
-               "source": "independent.co.uk"
-            },
-            {
-               "aid": "5cf50a9aa097df0f98a2f97d",
-               "source": "chicagotribune.com"
-            },
-            {
-               "aid": "5cf50d04a097df0f98a2f98e",
-               "source": "reuters.com"
-            },
-            {
-               "aid": "5cf60851a097df0f98a2ff69",
-               "source": "aa.com.tr"
-            },
-            {
-               "aid": "5cf4e4cba097df0f98a2f86d",
-               "source": "reuters.com"
-            },
-            {
-               "aid": "5cf6eec4a097df1177d83305",
-               "source": "afp.com"
-            },
-            {
-               "aid": "5cf6a7b1a097df0f98a303f9",
-               "source": "independent.co.uk"
-            }
-         ],
-         "source": "theguardian.com",
-         "summary_source": "chicagotribune.com",
-         "pubtime": "2019-06-03T21:27:52Z",
-         "aids": [
-            "5cf50a9aa097df0f98a2f97d",
-            "5cf51d22a097df0f98a2fa25",
-            "5cf50d04a097df0f98a2f98e",
-            "5cf5275fa097df0f98a2fa71",
-            "5cf6a7b1a097df0f98a303f9",
-            "5cf60851a097df0f98a2ff69",
-            "5cf4e4cba097df0f98a2f86d",
-            "5cf4ca45a097df0f98a2f7ce",
-            "5cf5067ca097df0f98a2f95f",
-            "5cf51ae6a097df0f98a2fa11",
-            "5cf6eec4a097df1177d83305"
-         ],
-         "_id": "5cf9646aa097df4bc1d854d4",
-         "summary_title": "President Trump, first lady meet with Queen Elizabeth II at Buckingham Palace",
-         "size": 11
-      },
-      {
-         "to_update": "5cf9bc8ba097df4bc1d8569a",
-         "found": true,
-         "aid": "5cf51d22a097df0f98a2fa25",
-         "people_top5": [
-            "Donald Trump",
-            "Melania Trump",
-            "Nigel Farage",
-            "Boris Johnson",
-            "Prince Charles"
-         ],
-         "title": "Donald Trump arrives in Buckingham Palace for state visit",
-         "url": "https://www.theguardian.com/us-news/2019/jun/03/donald-trump-arrives-in-buckingham-palace-for-state-visit",
-         "ntopic": 1574751,
-         "nl_title": "Trump visits Britain , but Brexit , Queen Elizabeth overshadowed",
-         "summary": "Donald Trump will plunge into Britain's Brexit crisis on Tuesday and is likely to demand that Prime Minister Theresa May's successor ban China's Huawei from 5G networks as thousands of protesters mock the U.S. president across London.",
-         "summary_aid": "5cf5d178a097df0f98a2febb",
-         "sources": [
-            {
-               "aid": "5cf51d22a097df0f98a2fa25",
-               "source": "theguardian.com"
-            },
-            {
-               "aid": "5cf4ca45a097df0f98a2f7ce",
-               "source": "independent.co.uk"
-            },
-            {
-               "aid": "5cf10dc5a097df0f98a2e80c",
-               "source": "reuters.com"
-            },
-            {
-               "aid": "5cf51ae6a097df0f98a2fa11",
-               "source": "theguardian.com"
-            },
-            {
-               "aid": "5cf5067ca097df0f98a2f95f",
-               "source": "reuters.com"
-            },
-            {
-               "aid": "5cf50d04a097df0f98a2f98e",
-               "source": "reuters.com"
-            },
-            {
-               "aid": "5cf5275fa097df0f98a2fa71",
-               "source": "independent.co.uk"
-            },
-            {
-               "aid": "5cf50a9aa097df0f98a2f97d",
-               "source": "chicagotribune.com"
-            },
-            {
-               "aid": "5cf60851a097df0f98a2ff69",
-               "source": "aa.com.tr"
-            },
-            {
-               "aid": "5cf61654a097df0f98a2ffac",
-               "source": "reuters.com"
-            },
-            {
-               "aid": "5cf638dea097df0f98a30053",
-               "source": "reuters.com"
-            },
-            {
-               "aid": "5cf5d178a097df0f98a2febb",
-               "source": "france24.com"
-            },
-            {
-               "aid": "5cf4e4cba097df0f98a2f86d",
-               "source": "reuters.com"
-            },
-            {
-               "aid": "5cf6eec4a097df1177d83305",
-               "source": "afp.com"
-            },
-            {
-               "aid": "5cf6a7b1a097df0f98a303f9",
-               "source": "independent.co.uk"
-            }
-         ],
-         "source": "theguardian.com",
-         "summary_source": "france24.com",
-         "pubtime": "2019-06-03T21:27:52Z",
-         "aids": [
-            "5cf638dea097df0f98a30053",
-            "5cf50a9aa097df0f98a2f97d",
-            "5cf51d22a097df0f98a2fa25",
-            "5cf50d04a097df0f98a2f98e",
-            "5cf10dc5a097df0f98a2e80c",
-            "5cf5275fa097df0f98a2fa71",
-            "5cf5d178a097df0f98a2febb",
-            "5cf6a7b1a097df0f98a303f9",
-            "5cf60851a097df0f98a2ff69",
-            "5cf61654a097df0f98a2ffac",
-            "5cf4e4cba097df0f98a2f86d",
-            "5cf4ca45a097df0f98a2f7ce",
-            "5cf5067ca097df0f98a2f95f",
-            "5cf51ae6a097df0f98a2fa11",
-            "5cf6eec4a097df1177d83305"
-         ],
-         "_id": "5cf9bc8ba097df4bc1d8569a",
-         "summary_title": "Trump's UK visit turns to Brexit and Huawei as protests planned in London",
-         "size": 15
       }
    ],
    "geotag": "BE/BRU/BRU/Brussels",
    "single_source": 0,
-   "n_highlights": 1416,
+   "n_highlights": 1425,
    "new_highlights": -1,
    "geotext": "Brussels, Belgium",
-   "n_articles": 12778,
+   "n_articles": 12852,
    "read_highlights": [],
    "type": "Politics",
    "id": 1574751,
