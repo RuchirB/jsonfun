@@ -21,16 +21,29 @@ class Helper:
 	@staticmethod
 	def elaborateOnStory(storyIndex):
 		#information needed: Date of story & summary of first event
-		storyTime = Helper.jsonRequest[storyIndex]["latest_highlights"][storyIndex]["pubtime"]
+		storyTime = Helper.jsonRequest[storyIndex]["extent"]["start"]
 		year = int(storyTime[0:4])
 		month = int(storyTime[5:7])
 		day = int(storyTime[8:10])
-		print(str(year) + str(month) + str(day))
 		date = datetime.datetime(year, month, day)
+		#story started @
 		daysAgo = datetime.datetime.utcnow() - date
-		storySummary = Helper.jsonRequest[storyIndex]["latest_highlights"][storyIndex]["summary"]
+		storySummary = Helper.jsonRequest[storyIndex]["latest_highlights"][0]["summary"]
+
+		#story name
 		storyName = Helper.jsonRequest[storyIndex]["story_name"]
-		print("The " +storyName + " story started " +(str(daysAgo)) + " hours ago, when " + storySummary +".")
+
+		#Last Update
+		storyTimeLast = Helper.jsonRequest[storyIndex]["latest_highlights"][0]["pubtime"]
+		yearLast = int(storyTimeLast[0:4])
+		monthLast = int(storyTimeLast[5:7])
+		dayLast = int(storyTimeLast[8:10])
+		dateLast = datetime.datetime(yearLast, monthLast, dayLast)
+		#story started @
+		daysAgoLast = datetime.datetime.utcnow() - dateLast
+
+
+		print("The " +storyName + " story started " +(str(daysAgo)) + " hours ago." +" The latest update from this story comes from " +(str(daysAgoLast)) +" hours ago, when " + storySummary)
 
 
 
@@ -43,10 +56,9 @@ if("new" in userInput):
 
 userInput = input()
 #if userInput contains something from listOfThree, get that index and call a method elaborate that further describes it
-breakLooop = False
 for x in Helper.listOfThree:
+	breakLoop=False
 	for individualWord in userInput.split():
-		print("checking for " +individualWord + " in " + x)
 		if individualWord.lower() in x.lower():
 			#print("Found it in " +x +" print " +str(Helper.listOfThree.index(x)))
 			Helper.elaborateOnStory(Helper.listOfThree.index(x))
