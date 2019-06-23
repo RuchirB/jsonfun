@@ -64,6 +64,7 @@ class Helper:
 		print(peopleList[0]["name"] +", " +peopleList[1]["name"] + ", and " +peopleList[2]["name"] +" commented on the issue. " + peopleList[2]["name"] 
 			+" said \"" + highlightJson["descriptions"][2]["para"] +"\"")
 
+
 storyIndex = 0
 
 Helper.init()
