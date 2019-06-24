@@ -37,12 +37,18 @@ def constructDatePhrase(date):
 	return phrase
 
 def constructTimeDeltaPhrase(timeDelta):
-	hours = str(timeDelta).split(":")[0]
-	minutes = str(timeDelta).split(":")[1]
-	seconds = str(timeDelta).split(":")[2].split(".")[0]
 	
+	days = str(timeDelta.days)
+	secs = timeDelta.total_seconds()
+	hours = str(int(secs / 3600))
+	minutes = str(int(secs / 60) % 60)
+	seconds = str(secs%60).split(".", 1)[0]
+	
+
+	if int(days) > 0:
+		return(days + " days and " +hours+ " hours ago")
 	if int(hours) != 0:
-		return(hours + " hours, " + minutes + " minutes " + " and " + seconds + "seconds ago")
+		return(hours + " hours, " + minutes + " minutes ago")
 	elif int(minutes) != 0:
 		return(minutes + " minutes " + "and " + seconds + "seconds ago")
 	elif int(minutes) != 0:

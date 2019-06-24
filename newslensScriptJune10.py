@@ -1,4 +1,4 @@
-import requests, datetime
+import requests, datetime, dateTimeModule
 
 #listOfThree = list()
 class Helper:
@@ -43,7 +43,7 @@ class Helper:
 		daysAgoLast = datetime.datetime.utcnow() - dateLast
 
 
-		print("The " +storyName + " story started " +(str(daysAgo)) + " hours ago." +" The latest update from this story comes from " +(str(daysAgoLast)) +" hours ago, when " + storySummary)
+		print("The " +storyName + " story started " +dateTimeModule.constructTimeDeltaPhrase(daysAgo) +" The latest update from this story comes from " +dateTimeModule.constructTimeDeltaPhrase(daysAgoLast) +" when " + storySummary)
 		print("\n Do you want me to tell you what people have said or walk you through the last 10 events in the story?")
 
 	@staticmethod
@@ -67,37 +67,49 @@ class Helper:
 
 storyIndex = 0
 
+def elaborateOnStory(userInput):
+	#if userInput contains something from listOfThree, get that index and call a method elaborate that further describes it
+	print("elaborating on " +userInput)
+	elaborated = False
+	for x in Helper.listOfThree:
+		breakLoop=False
+		for individualWord in userInput.split():
+			if individualWord.lower() in x.lower():
+				#print("Found it in " +x +" print " +str(Helper.listOfThree.index(x)))
+				storyIndex=Helper.listOfThree.index(x)
+				Helper.elaborateOnStory(storyIndex)
+				elaborated = True
+				breakLoop=True
+				break
+		if breakLoop is True:
+			break
+	return elaborated
+
+def lastTenEventsOrPeople(userInput):
+	if("last" in userInput or "10 events" in userInput):
+		Helper.last10Events(storyIndex)
+		return True
+	elif("people" in userInput or "said" in userInput):
+		Helper.peopleSaid(storyIndex)	
+		return True
+	else:
+		return False
+
+
+
+
 Helper.init()
 print("Hi, I'm NewsLens!")
-userInput = input()
+while(exit != True):
+	alreadyResponded = False
+	userInput = input() #Hi newslens whats new
 
-if("new" in userInput):
-	Helper.displayNewsStories()
+	if("new" in userInput):
+		Helper.displayNewsStories()
+		alreadyResponded = True
 
-userInput = input()
-#if userInput contains something from listOfThree, get that index and call a method elaborate that further describes it
-for x in Helper.listOfThree:
-	breakLoop=False
-	for individualWord in userInput.split():
-		if individualWord.lower() in x.lower():
-			#print("Found it in " +x +" print " +str(Helper.listOfThree.index(x)))
-			storyIndex=Helper.listOfThree.index(x)
-			Helper.elaborateOnStory(storyIndex)
-			breakLoop=True
-			break
-	if breakLoop is True:
-		break
+	if alreadyResponded != True:
+		alreadyResponded = elaborateOnStory(userInput)
 
-userInput = input()
-
-if("last" in userInput or "10 events" in userInput):
-	Helper.last10Events(storyIndex)
-elif("people" in userInput or "said" in userInput):
-	Helper.peopleSaid(storyIndex)
-
-userInput = input()
-
-if("last" in userInput or "10 events" in userInput):
-	Helper.last10Events(storyIndex)
-elif("people" in userInput or "said" in userInput):
-	Helper.peopleSaid(storyIndex)
+	if alreadyResponded != True:
+		alreadyResponded = lastTenEventsOrPeople(userInput)
