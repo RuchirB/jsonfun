@@ -12,12 +12,12 @@ def timeFormat(timeStamp):
 		dateTimeObj = datetime(yearLast, monthLast, dayLast)
 		return dateTimeObj
 def lastSpokeUpdate(input):
-	lastAccessed = open("lastAccessed.txt", "w")
+	lastAccessed = open("/Users/ruchirbaronia/Desktop/PythonProjects/JSONfun/lastAccessed.txt", "w")
 	lastAccessed.write(str(input))
 	lastAccessed.close()
 	pass
 def lastSpoke():
-	lastAccessed = open("lastAccessed.txt", "r")
+	lastAccessed = open("/Users/ruchirbaronia/Desktop/PythonProjects/JSONfun/lastAccessed.txt", "r")
 	dateString = lastAccessed.read()
 	return datetime.strptime(dateString[0:19], "%Y-%m-%d %H:%M:%S") #reads string from file in teh format of "%Y-%m-%d %H:%M:%S" and puts in datetime object
 
@@ -40,27 +40,27 @@ def constructTimeDeltaPhrase(timeDelta):
 	
 	days = str(timeDelta.days)
 	secs = timeDelta.total_seconds()
-	hours = str(int(secs / 3600))
+	hours = str(int(secs / 3600) % 24)
 	minutes = str(int(secs / 60) % 60)
 	seconds = str(secs%60).split(".", 1)[0]
 	
-
 	if int(days) > 0:
 		return(days + " days and " +hours+ " hours ago")
 	if int(hours) != 0:
 		return(hours + " hours, " + minutes + " minutes ago")
 	elif int(minutes) != 0:
-		return(minutes + " minutes " + "and " + seconds + "seconds ago")
-	elif int(minutes) != 0:
-		return(seconds + "seconds ago")
+		return(minutes + " minutes " + "and " + seconds + " seconds ago")
+	elif int(minutes) != 0 or int(seconds) > 0:
+		return(seconds + " seconds ago")
+	else:
+		return(" UNKNOWN")
 
 
 
 #if first time ever interacting with chatbot
-if os.path.isfile("lastAccessed.txt") is False:
+if os.path.isfile("/Users/ruchirbaronia/Desktop/PythonProjects/JSONfun/lastAccessed.txt") is False:
 	lastSpokeUpdate(datetime.utcnow())
 
 timeAgo = datetime.utcnow()-lastSpoke() #constructs a timedelta object
 
-print("Hi, the last time you spoke to me was " +constructTimeDeltaPhrase(timeAgo))
-lastSpokeUpdate(datetime.utcnow()) #update the file with the time spoken now for later reference
+print("Last Spoken to: " +constructTimeDeltaPhrase(timeAgo))
