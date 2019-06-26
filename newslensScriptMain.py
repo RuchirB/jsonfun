@@ -6,6 +6,7 @@ class Helper:
 	listOfThree = []
 	jsonRequest = []
 	listOfHistory = []
+	listOfCategories = ["World Affairs", "Politics", "Business", "Culture", "Science"]
 
 	@staticmethod
 	def init():
@@ -48,7 +49,6 @@ class Helper:
 		Helper.saveStoryName(Helper.jsonRequest[storyIndex]["id"])
 
 		print("The " +storyName + " story started " +dateTimeModule.constructTimeDeltaPhrase(daysAgo) +" The latest update from this story comes from " +dateTimeModule.constructTimeDeltaPhrase(daysAgoLast) +" when " + storySummary)
-		print("\n Do you want me to tell you what people have said or walk you through the last 10 events in the story?")
 
 	@staticmethod
 	def last10Events(storyIndex):
@@ -71,11 +71,12 @@ class Helper:
 	@staticmethod
 	def loadSavedHistory():
 		storyFile = open("/Users/ruchirbaronia/Desktop/PythonProjects/JSONfun/storyInteractions.txt", "a+")
-		Helper.listOfHistory = storyFile.readlines()
+		# = json.loads(storyFile.read())
+		storyFile.close()
 
 	@staticmethod
 	def saveStoryName(storyId):
-
+		Helper.loadSavedHistory()
 		for y in range(len(Helper.jsonRequest)):
 			if Helper.jsonRequest[y]["id"] == int(storyId):
 				storyName= Helper.jsonRequest[y]["story_name"]
@@ -83,13 +84,9 @@ class Helper:
 		myDict = {"story_name":storyName, "id":storyId, "accessTime":str(datetime.datetime.utcnow())}
 		Helper.listOfHistory.append(myDict)
 
-		storyFile = open("/Users/ruchirbaronia/Desktop/PythonProjects/JSONfun/storyInteractions.txt", "a+")
-		
-		for jsonFile in Helper.listOfHistory:
-			storyFile.write("%s\n" %jsonFile)
 
-
-		#json.dump(myDict, storyFile, indent=1)
+		storyFile = open("/Users/ruchirbaronia/Desktop/PythonProjects/JSONfun/storyInteractions.txt", "w")
+		storyFile.write(json.dumps(Helper.listOfHistory))
 		storyFile.close()
 
 
@@ -98,7 +95,6 @@ storyIndex = 0
 
 def elaborateOnStory(userInput):
 	#if userInput contains something from listOfThree, get that index and call a method elaborate that further describes it
-	print("elaborating on " +userInput)
 	elaborated = False
 	for x in Helper.listOfThree:
 		breakLoop=False
@@ -127,14 +123,13 @@ def lastTenEventsOrPeople(userInput):
 
 def giveUserHistory():
 	storyFile = open("/Users/ruchirbaronia/Desktop/PythonProjects/JSONfun/storyInteractions.txt", "r")
-	array = storyFile.readlines()
+	array = json.load(storyFile)
 	print("Here are the stories you've asked about before: \n")
-	for x in array: #for every line in the history file
-		dictionary = json.loads(x)
-		id = dictionary["id"] #Pull out the ID from the line
-		print("USER ID " +id)
-		print(dictionary["story_name"])
+	for x in range(len(array)):
+		id = array[x]["id"] #Pull out the ID from the line
+		print(array[x]["story_name"])
 	storyFile.close()
+	return True
 
 def getUpdatesOn(storyInput):
 	print("Would you like updates on any of these stories?")
@@ -151,7 +146,33 @@ def getUpdatesOn(storyInput):
 		else:
 			print("What?")
 
+def displayCategoryNews(userInput):
+	focusCategory = ""
+	focusCategoryList = []
+	for category in Helper.listOfCategories:
+		if category.lower() in userInput.lower():
+			focusCategory = category
+			print("Searching for stories under " +focusCategory + "...")
+			break
+	if focusCategory is "":
+		return False
+	else:
+		for x in Helper.jsonRequest:
+			if x["type"].lower() == focusCategory.lower():
+				focusCategoryList.append(x)
+
+	for newsStory in focusCategoryList:
+		print(newsStory["story_name"])
 	
+
+def checkEveryArticleName(userInput):
+	i = -1
+	for article in Helper.jsonRequest:
+		i = i+1
+		for x in article["story_name"].split():
+			if x.lower() in userInput.lower():
+				print("story index " +str(i))
+				Helper.elaborateOnStory(i)
 
 #TODO:
 #Test that this code displays all the user history properly.
@@ -159,7 +180,7 @@ def getUpdatesOn(storyInput):
 #Allow user to ask for a specific person name, search for it in database and pull info about it
 #After implementing the above, store any specific people names in a separate history file with date accessed
 #implement the help command 
-
+print("Initializing ChatBot...")
 Helper.init()
 print("Hi, I'm NewsLens!")
 while(exit != True):
@@ -182,5 +203,11 @@ while(exit != True):
 	if alreadyResponded != True and "history" in userInput:
 		alreadyResponded = giveUserHistory()
 
-	#if alreadyResponded != True 
+	if alreadyResponded != True:
+		alreadyResponded = displayCategoryNews(userInput)
+
+	#if alreadyResponded != True:
+	#	alreadyResponded = checkEveryArticleName(userInput)
+
+
 	
