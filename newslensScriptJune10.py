@@ -45,6 +45,7 @@ class Helper:
 		#story started @
 		daysAgoLast = datetime.datetime.utcnow() - dateLast
 
+		print("Abou to save story name with " +Helper.jsonRequest[storyIndex]["id"])
 		#Saving story
 		Helper.saveStoryName(Helper.jsonRequest[storyIndex]["id"])
 
@@ -70,26 +71,28 @@ class Helper:
 
 	@staticmethod
 	def loadSavedHistory():
-		storyFile = open("/Users/ruchirbaronia/Desktop/PythonProjects/JSONfun/storyInteractions.txt", "r")
-		try:
-			Helper.listOfHistory = json.load(storyFile)
-		except ValueError as e:
-			pass
+		storyFile = open("/Users/ruchirbaronia/Desktop/PythonProjects/JSONfun/storyInteractions.txt", "a+")
+		Helper.listOfHistory = json.loads(storyFile.read())
 		storyFile.close()
 
 	@staticmethod
 	def saveStoryName(storyId):
+		print("sving story name ")
+
 		Helper.loadSavedHistory()
 		for y in range(len(Helper.jsonRequest)):
 			if Helper.jsonRequest[y]["id"] == int(storyId):
 				storyName= Helper.jsonRequest[y]["story_name"]
-
-
+		
 		myDict = {"story_name":storyName, "id":storyId, "accessTime":str(datetime.datetime.utcnow())}
 		
-		for jsonDict in Helper.listOfHistory:
-			if jsonDict["story_name"] == storyName:
-				Helper.listOfHistory.remove(jsonDict)
+		index = -1
+		for myDict in Helper.listOfHistory:
+			index = index+1
+			print("Looking through " +myDict["story_name"])
+			if myDict["story_name"] == storyName:
+				Helper.listOfHistory.remove(index)
+				print("Removing story from history @ " index)
 
 		Helper.listOfHistory.append(myDict)
 		storyFile = open("/Users/ruchirbaronia/Desktop/PythonProjects/JSONfun/storyInteractions.txt", "w")
@@ -181,42 +184,6 @@ def checkEveryArticleName(userInput):
 				print("story index " +str(i))
 				Helper.elaborateOnStory(i)
 
-
-def checkForHistory(userInput):
-	storyFile = open("/Users/ruchirbaronia/Desktop/PythonProjects/JSONfun/storyInteractions.txt", "r")
-	array = json.load(storyFile)
-	id = ""
-	for x in range(len(array)):
-		if(userInput.lower() in array[x]["story_name"].lower()):
-			id = array[x]["id"] #Pull out the ID from the line
-			accessTimeString = array[x]["accessTime"]
-			accessTime = datetime.datetime.strptime(accessTimeString, "%Y-%m-%d %H:%M:%S.%f")
-
-	storyFile.close()
-
-	if(id == ""):
-		return False
-	else:
-		giveUpdateReport(storyID = id, accessTime = accessTime)
-		return True
-
-def giveUpdateReport(storyID, accessTime):
-	storyIndex = 90000
-	for y in range(len(Helper.jsonRequest)):
-		if Helper.jsonRequest[y]["id"] == int(storyID):
-			storyIndex = y
-			print("Found story!!")
-			break
-
-	if(storyIndex != 90000):
-		print(storyIndex)
-		for index in range(len(Helper.jsonRequest[storyIndex]["latest_highlights"])):
-			indexBackwards = len(Helper.jsonRequest[storyIndex]["latest_highlights"]) - index -1
-			pubTime = dateTimeModule.timeFormat(Helper.jsonRequest[storyIndex]["latest_highlights"][indexBackwards]["pubtime"])
-			if(pubTime > accessTime):
-				print("One update you missed from " +dateTimeModule.constructTimeDeltaPhrase(pubtime - accessTime) +"is " +Helper.jsonRequest[y]["latest_highlights"][indexBackwards]["summary_title"])
-
-
 #TODO:
 #Test that this code displays all the user history properly.
 #Create method that gets all updates for a certain story after a certain date. Parameters (Story_name, date_accessed). Then use this same function to allow the user to ask for give me updates on the XXX story from YYY date. search XXX in ALL storynames & pull updates from YYY
@@ -248,9 +215,6 @@ while(exit != True):
 
 	if alreadyResponded != True:
 		alreadyResponded = displayCategoryNews(userInput)
-
-	if alreadyResponded != True:
-		alreadyResponded = checkForHistory(userInput)
 
 	#if alreadyResponded != True:
 	#	alreadyResponded = checkEveryArticleName(userInput)

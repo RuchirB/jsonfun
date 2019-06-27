@@ -1,1 +1,1 @@
-[{"story_name": "Gaza violence", "id": 558882, "accessTime": "2019-06-26 01:30:20.727863"}]
+[{"story_name": "Turkey's erdogan", "id": 160665, "accessTime": "2019-06-26 21:37:46.954885"}, {"story_name": "Trump's jerusalem decision", "id": 244417, "accessTime": "2019-06-26 21:53:37.505079"}, {"story_name": "Gaza violence", "id": 558882, "accessTime": "2019-06-27 14:37:27.459823"}]
