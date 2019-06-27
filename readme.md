@@ -1,4 +1,4 @@
-The only script that you should be running is newslensScriptMain.py. Here are some example commands you can enter, 
+The only script that you should be running is newslensScriptMain.py. This file does rely on importing 'dateTimeModule.py', so make sure this is downloaded as well. Here are some example commands you can enter, 
 but most variations of these commands still work:
 
 "What's new" - gives you the top three stories
