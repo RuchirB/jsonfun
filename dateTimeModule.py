@@ -9,7 +9,7 @@ def timeFormat(timeStamp):
 		hour = int(timeStamp[11:13])
 		minute = int(timeStamp[14:16])
 		sec = int(timeStamp[17:19])
-		dateTimeObj = datetime(yearLast, monthLast, dayLast)
+		dateTimeObj = datetime(year, month, day)
 		return dateTimeObj
 def lastSpokeUpdate(input):
 	lastAccessed = open("/Users/ruchirbaronia/Desktop/PythonProjects/JSONfun/lastAccessed.txt", "w")

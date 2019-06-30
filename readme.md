@@ -13,3 +13,4 @@ but most variations of these commands still work:
 
 category_name - Gives you a list of stories under that category
 
+"stories from japan" - Gives you a list of recent stories from Japan

@@ -36,6 +36,8 @@ class Helper:
 		#story name
 		storyName = Helper.jsonRequest[storyIndex]["story_name"]
 
+
+
 		#Last Update
 		storyTimeLast = Helper.jsonRequest[storyIndex]["latest_highlights"][0]["pubtime"]
 		yearLast = int(storyTimeLast[0:4])
@@ -134,7 +136,8 @@ def giveUserHistory():
 	print("Here are the stories you've asked about before: \n")
 	for x in range(len(array)):
 		id = array[x]["id"] #Pull out the ID from the line
-		print(array[x]["story_name"])
+
+		print(array[x]["story_name"] +", accessed: " +array[x]["accessTime"] )
 	storyFile.close()
 	return True
 
@@ -216,6 +219,23 @@ def giveUpdateReport(storyID, accessTime):
 			if(pubTime > accessTime):
 				print("One update you missed from " +dateTimeModule.constructTimeDeltaPhrase(pubtime - accessTime) +"is " +Helper.jsonRequest[y]["latest_highlights"][indexBackwards]["summary_title"])
 
+def checkForLocation(userInput):
+	if "from" in userInput:
+		userInput = userInput.split("from ")[1]
+	if "in" in userInput:
+		userInput = userInput.split("in ")[1]
+
+	prompt = False
+	number = 0
+	for story in range(len(Helper.jsonRequest)):
+		if userInput.lower() in Helper.jsonRequest[story]["geotext"].lower():
+			number= number+1
+			if prompt == False:
+				print("Here are some stories from " +Helper.jsonRequest[story]["geotext"] +": \n")
+				prompt = True
+			print(str(number) +") " +Helper.jsonRequest[story]["story_name"])
+
+
 
 #TODO:
 #Test that this code displays all the user history properly.
@@ -251,6 +271,9 @@ while(exit != True):
 
 	if alreadyResponded != True:
 		alreadyResponded = checkForHistory(userInput)
+
+	if alreadyResponded != True:
+		alreadyResponded = checkForLocation(userInput)
 
 	#if alreadyResponded != True:
 	#	alreadyResponded = checkEveryArticleName(userInput)
