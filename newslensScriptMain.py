@@ -50,7 +50,7 @@ class Helper:
 		#Saving story
 		Helper.saveStoryName(Helper.jsonRequest[storyIndex]["id"])
 
-		print("The " +storyName + " story started " +dateTimeModule.constructTimeDeltaPhrase(daysAgo) +" The latest update from this story comes from " +dateTimeModule.constructTimeDeltaPhrase(daysAgoLast) +" when " + storySummary)
+		print("The " +storyName + " story started " +dateTimeModule.constructTimeDeltaPhrase(daysAgo) +". The latest update from this story comes from " +dateTimeModule.constructTimeDeltaPhrase(daysAgoLast) +" when " + storySummary)
 
 	@staticmethod
 	def last10Events(storyIndex):
@@ -179,10 +179,8 @@ def checkEveryArticleName(userInput):
 	i = -1
 	for article in Helper.jsonRequest:
 		i = i+1
-		for x in article["story_name"].split():
-			if x.lower() in userInput.lower():
-				print("story index " +str(i))
-				Helper.elaborateOnStory(i)
+		if userInput.lower() in article["story_name"].lower():
+			Helper.elaborateOnStory(i)
 
 
 def checkForHistory(userInput):
@@ -275,8 +273,8 @@ while(exit != True):
 	if alreadyResponded != True:
 		alreadyResponded = checkForLocation(userInput)
 
-	#if alreadyResponded != True:
-	#	alreadyResponded = checkEveryArticleName(userInput)
+	if alreadyResponded != True:
+		alreadyResponded = checkEveryArticleName(userInput)
 
 
 	
